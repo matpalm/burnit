@@ -1,7 +1,4 @@
 #!/usr/bin/env ruby
-N = 16
-raise "need to change sprintf sorry" if N>=20
-
 MAX_SIZE = (4.3 * 1024 * 1024 * 0.99).to_i
 
 sizes = []
