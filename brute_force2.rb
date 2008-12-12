@@ -23,7 +23,7 @@ MAX_SIZE = (4.3 * 1024 * 1024 * 0.99).to_i
 
 sizes = []
 names = []
-IO.read('files').each do |line|
+IO.read(ARGV[0]).each do |line|
 	line =~ /(.*?)\s+\.\/(.*)/
 	size = $1; name = $2
 	sizes << size.to_i
